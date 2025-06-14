@@ -1,36 +1,89 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokesh's Website Portfolio</title>
- </head>
- <body>
-    <h1>Lokesh Sathish's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr />
-    <ul>
-       <li><a href="./public/movie-ranking.html"> <h3>Movie Ranking Project</h3></a></li>
-       <img src="./assets/images/Movie Ranking List.png" height="400" />
-       <li><a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a></li>
-       <img src="./assets/images/birthday-invite.png" height="400" />
-    </ul>
-    <hr />
-    <a href="./public/about.html"><p>About</p></a>
-    <a href="./public/contact.html"><p>Contact Me</p></a>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+    
+    */
+    .container{
+      background-color: #232629;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 131px 155px 20px;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+    }
+    .red{
+      background-color: #E72F24;
+      grid-column: span 1;
+    }
+    .blue{
+      background-color: #002e92;
+      grid-column:-1/-2;
+      grid-row: 2/3;
+      border-bottom: solid 10px;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      grid-column: 2/3;
+      grid-row: -1/-2;
+    }
+    .black{
+      background-color: #232629;
+      grid-column: 3/4;
+      grid-row: -1/-2;
+    }
+    .white{
+      background-color:  #F0F1EC;
+    }
+    .one{
+      grid-column: 2/-1;
+      grid-row: 1/2;
+    }
+    .two{
+      grid-row: 2/4;
+    }
+    .three{
+      grid-row: 2/4;
+      grid-column: 2/4;
+    }
+    .four{
+      grid-column: 4/-1;
+      grid-row: 3/-1;
+    }
+    .five{
+      grid-column: 1/2;
+      grid-row: -1/-2;
+    }
+  </style>
+</head>
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="Black"></div>
+      <div class="white one"></div>
+      <div class="white two"></div>
+      <div class="white three"></div>
+      <div class="white four"></div>
+      <div class="white five"></div>
+   </div>
+</body>
 
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+</html>
